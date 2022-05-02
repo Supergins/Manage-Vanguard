@@ -74,7 +74,7 @@ if ERRORLEVEL 1 (
 echo. & echo.
 
 
-@REM Checks if any of the Vanduard processes/services is running
+@REM Checks if any of the Vanduard processes/services are running
 echo -------------------------------------------------------------
 choice /c ny /n /t 180 /d y /m "DO YOU WANT TO DISABLE VANGUARD (includes Vanguard Tray process and vgc, vgk services)? (Y/n)    "
 if ERRORLEVEL 2 (
@@ -83,7 +83,7 @@ if ERRORLEVEL 2 (
     taskkill /im vgtray.exe /f
     echo.
 
-    echo    Disabling vgc and vgk services...
+    echo    Stopping vgc and vgk services...
     call :StopRunningService vgc
     call :StopRunningService vgk
 )
