@@ -1,5 +1,5 @@
 ### Manage-Vanguard
-A simple batch script to manage RIOT Vanguard startup settings.
+A simple batch script to manage RIOT Vanguard startup settings. Inspired by this Gist: https://gist.github.com/AndrewMast/742ac7e07c37096017e907b0fd8ec7bb
 
 ## Features:
 * Can modify the default startup setting of Vanguard services (vgc and vgk). Both enabling and disabling them.
